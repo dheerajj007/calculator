@@ -70,11 +70,10 @@ class _CalculatorAppState extends State<CalculatorApp> {
                 Container(
                   padding: EdgeInsets.all(12),
                   child: Text(
-                    _history,
+                    _expression,
                     style: GoogleFonts.rubik(
                       textStyle: TextStyle(
-                        fontSize: 30,
-                        color: Color(0xff54b461),
+                        fontSize: 60,
                       ),
                     ),
                   ),
@@ -83,10 +82,11 @@ class _CalculatorAppState extends State<CalculatorApp> {
                 Container(
                   padding: EdgeInsets.all(12),
                   child: Text(
-                    _expression,
+                    _history,
                     style: GoogleFonts.rubik(
                       textStyle: TextStyle(
-                        fontSize: 60,
+                        fontSize: 30,
+                        color: Color(0xff54b461),
                       ),
                     ),
                   ),
