@@ -6,17 +6,22 @@ class CalculatorButton extends StatelessWidget {
   final int fillColor;
   final int textColor;
   final double textSize;
+  final Function callBack;
   const CalculatorButton({
     Key key,
     this.fillColor,
     this.text,
     this.textColor = 0xffffffff,
-    this.textSize = 24,
+    this.textSize = 28,
+    this.callBack,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.all(1),
+      height: 85.0,
+      width: 90.0,
       child: FloatingActionButton(
         child: Text(
           text,
@@ -27,7 +32,9 @@ class CalculatorButton extends StatelessWidget {
             ),
           ),
         ),
-        onPressed: () {},
+        onPressed: () {
+          callBack(text);
+        },
         backgroundColor: Color(fillColor),
       ),
     );
