@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:scientific_calculator/widgets/calculator_button.dart';
 import 'package:math_expressions/math_expressions.dart';
 import 'dart:ui';
+import 'widgets/calculator_button.dart';
 
 void main() => runApp(CalculatorApp());
 

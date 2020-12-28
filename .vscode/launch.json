@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "scientific_calculator",
+            "name": "calculator",
             "request": "launch",
             "type": "dart"
         }
